@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tip Calculator</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+      <div class="header">
+        <h1>Weather App</h1>
+        <p class="lead">This was made with the OpenWeatherMap API. <br><br>Enter the name of a city in the form below, click <span class="orange">send</span>, and a weather report will be generated for you!</p>
+      </div>
+
+      <div class="container-fluid" id="container">
+        <div class="row">
+          <div class="card col-lg-6 col-sm-12 shadow-md">
+            <div class="city name card-title">
+              <h2 id="location"></h2>
+            </div>
+            <div class="temperature card-body" id="temperature-container">
+              <h4 id="temp"></h4>
+            </div>
+          <div class="description card-body">
+            <h4 class="text-capitalize" id="description"></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto" id="form-container">
+      <label>Enter a new city</label>
+      <input class="form-control col-lg-4 col-md-10 mx-auto" id="city-name" type="text" label="City" placeholder="Chicago">
+      <input class="btn btn-light mx-auto" type="button" value="Send" id="send-button">
+
+    </div>
+    
+    <script src="app.js"></script>
+    </body>
+    </html>
